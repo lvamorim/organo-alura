@@ -1,0 +1,18 @@
+header {
+  background-image: url(/public/img/header-banner.png);
+  background-size: cover;
+  padding: var(--spacing-4x) 0 calc(var(--spacing-4x) * 3) 0;
+}
+
+header .logo {
+  width: 190px;
+}
+
+header h1 {
+  font-weight: 400;
+  margin-top: clamp(var(--spacing), 5vw, var(--spacing-4x));
+}
+
+header h2 {
+  font-family: var(--text-font);
+}

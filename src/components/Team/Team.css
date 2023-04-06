@@ -1,0 +1,21 @@
+.team {
+  position: relative; /* for background image */
+  text-align: center;
+  padding: var(--spacing-2x) 0;
+}
+
+.team::before {
+  content: "";
+  background-image: url(/public/img/texture.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.team .title__divider {
+  width: var(--spacing-2x);
+}

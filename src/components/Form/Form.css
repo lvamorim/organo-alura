@@ -1,0 +1,28 @@
+.form__box {
+  background-color: var(--contrast-color);
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 
+    clamp(var(--spacing), 10vw, var(--spacing-2x)) 
+    clamp(var(--spacing-2x), 10vw, var(--spacing-4x));
+  margin-top: var(--spacing-4x);
+}
+
+.form__box.active {
+  opacity: 0;
+  transition: 1s;
+}
+
+.form__box form {
+  display: grid;
+  gap: var(--spacing-2x);
+}
+
+.form__box form button {
+  border-radius: 10px;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 
+    clamp(var(--spacing-half), 5vw, calc(var(--spacing) * 1.5)) 
+    clamp(var(--spacing), 5vw, var(--spacing-2x));
+}

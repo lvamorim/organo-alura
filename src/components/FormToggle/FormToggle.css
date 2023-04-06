@@ -1,0 +1,38 @@
+.form__toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing);
+  margin: var(--spacing-4x) 0;
+}
+
+.form__toggle div {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form__toggle h2 {
+  color: var(--primary-color);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: var(--spacing);
+}
+
+.form__toggle .title__divider {
+  background-color: var(--primary-color);
+  width: var(--spacing-4x);
+}
+
+.form__toggle button {
+  border: 2px solid #FFFFFF;
+  border-radius: 100%;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  padding: clamp(var(--spacing-half), 2.5vw, var(--spacing));
+}
+
+.form__toggle button:hover {
+  border: 2px solid var(--secondary-color);
+}
+
+.form__toggle button img {
+  width: clamp(30px, 5vw, 40px);
+}

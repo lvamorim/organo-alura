@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  font-family: var(--title-font);
+}
+
+h3, h4 {
+  font-family: var(--text-font);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 10vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 5vw, 2rem);
+  font-weight: 400;
+}
+
+.title__divider {
+  height: 4px;
+  margin: var(--spacing-half) auto 0 auto;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+label {
+  display: block;
+  font-size: clamp(1rem, 5vw, 1.125rem);
+  font-weight: 600;
+  margin-bottom: var(--spacing);
+}
+
+input, select {
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  font-size: clamp(.5rem, 5vw, 1rem);
+  width: 100%;
+  padding: clamp(var(--spacing), 5vw, calc(var(--spacing) * 1.5));
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='dimgray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+}
+
+input, select, button {
+  border: none;
+}
+
+input:focus, select:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 700;
+}
+
+button:hover {
+  color: var(--secondary-color);
+}

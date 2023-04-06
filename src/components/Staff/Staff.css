@@ -1,0 +1,66 @@
+.staff__line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2x);
+  margin-top: var(--spacing-2x);
+}
+
+.card {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.1));
+}
+
+@media screen and (min-width: 0) {
+  .card {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 500px) {
+    .card {
+      width: calc(50% - var(--spacing));
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .card {
+      width: calc(33.33% - (var(--spacing) * 1.35));
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .card {
+      width: calc(25% - (var(--spacing) * 1.5));
+    }
+  }
+}
+
+.card .header {
+  border-radius: 10px 10px 0 0;
+  height: 90px;
+}
+
+.card .picture {
+  border-radius: 100%;
+  position: relative;
+  top: var(--spacing-2x);
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card .info {
+  background-color: #FFFFFF;
+  border-radius: 0 0 10px 10px;
+  padding: calc(var(--spacing) * 1.5);
+}
+
+.card .name {
+  color: var(--primary-color);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: var(--spacing-4x) 0 var(--spacing-half) 0;
+}
+
+.card .profession {
+  font-size: 1rem;
+  font-weight: 400;
+}

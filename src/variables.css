@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Prata&display=swap');
+
+:root {
+  --text-font: 'Montserrat', sans-serif;
+  --title-font: 'Prata', serif;
+
+  --text-color: #212121;
+  --primary-color: #6278F7;
+  --secondary-color: #95FFD4;
+  --contrast-color: #F2F2F2;
+
+  --spacing: 1rem;
+  --spacing-half: calc(var(--spacing) / 2);
+  --spacing-2x: calc(var(--spacing) * 2);
+  --spacing-3x: calc(var(--spacing) * 3);
+  --spacing-4x: calc(var(--spacing) * 4);
+}
