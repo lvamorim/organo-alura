@@ -55,7 +55,7 @@ function App() {
       <Header/>
 
       <Form 
-        title="Preencha os dados para criar o card do colaborador:" 
+        title="Preencha os dados para criar o card do colaborador." 
         teams={teams.map(team => team.name)} 
         newPersonInStaff={person => addNewPerson(person)}
       />

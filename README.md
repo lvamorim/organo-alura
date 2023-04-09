@@ -11,3 +11,8 @@ Projeto proposto pelo curso <strong>React: desenvolvendo com JavaScript</strong>
 
 ## Link
 https://organo-alura-lv.vercel.app/
+
+<br>
+
+## Preview
+<img src="https://user-images.githubusercontent.com/118397791/230795565-46a220c0-2e2d-4fb8-8919-fb52026e8cd3.png"/>
